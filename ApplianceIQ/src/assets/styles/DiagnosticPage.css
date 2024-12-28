@@ -1,0 +1,147 @@
+.diagnostic-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Image */
+.diagnostic-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* Steps */
+
+#steps-title {
+    font-size: 40px;
+}
+
+/* Step and progress bar */
+.progress-bar {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 10px;
+    background-color: #4caf50;
+    transition: width 0.3s ease-in-out;
+}
+
+.diagnostic-step {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.diagnostic-complete {
+    margin: 20px 0;
+    padding: 2px 20px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    color: #388e3c;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:not(:disabled) {
+    background-color: #007bff;
+    transition: 0.2s;
+}
+
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+/* Restart and Back buttons */
+
+/* Back button */
+#back {
+    background-color: #a72828;
+    transition: 0.3s;
+}
+
+#back:hover {
+    background-color: #621a1a;
+}
+
+button:nth-child(4) {
+    background-color: #ff5722;
+}
+
+button:nth-child(4):hover {
+    background-color: #e64a19;
+}
+
+/* Not Found Page */
+.diagnostic-not-found {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .diagnostic-container {
+        font-size: 18px;
+    }
+
+    .diagnostic-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    button {
+        font-size: 25px;
+        padding: 15px 30px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    #steps-title {
+        font-size: 30px;
+    }
+    .diagnostic-step {
+        font-size: 24px;
+    }
+    
+    .diagnostic-complete {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+}

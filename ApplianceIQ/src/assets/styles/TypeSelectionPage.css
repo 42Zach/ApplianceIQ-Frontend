@@ -1,0 +1,50 @@
+.type-selection-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Options container */
+.type-options {
+    margin: 20px 0;
+}
+
+/* Button */
+.type-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.type-button:hover {
+    background-color: #0056b3;
+}
+
+.type-button:active {
+    background-color: #003f88;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    .type-selection-title {
+        font-size: 80px;
+    }
+
+    .type-button {
+        padding: 15px 30px;
+        font-size: 30px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .type-button {
+        font-size: 24px;
+    }
+}
