@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
-import REACT_APP_API from '../../.env';
 
 const HomePage = () => {
     const [appliances, setAppliances] = useState([]);
@@ -12,7 +11,7 @@ const HomePage = () => {
             try {
                 // http://localhost:8080/api/appliances
                 // + '/api/appliances'
-                const response = await fetch(process.env.REACT_APP_API);
+                const response = await fetch(process.env.BACKEND_API);
                 const data = await response.json();
                 setAppliances(data);
             } catch (error) {
