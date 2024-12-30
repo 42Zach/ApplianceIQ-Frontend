@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
-import BACKEND_API from '../../.env';
 
 const HomePage = () => {
     const [appliances, setAppliances] = useState([]);
@@ -36,7 +35,7 @@ const HomePage = () => {
                 {appliances.map(appliance => (
                     <ApplianceCard 
                         key={appliance.id} 
-                        appliance={{...appliance, image: `http://localhost:8080${appliance.image}`}}
+                        appliance={{...appliance, image: `https://applianceiq-backend-production.up.railway.app${appliance.image}`}}
                     />
                 ))}
             </div>
