@@ -10,7 +10,8 @@ const HomePage = () => {
         const fetchAppliances = async () => {
             try {
                 // http://localhost:8080/api/appliances
-                const response = await fetch(process.env.REACT_APP_API_URL + '/api/appliances');
+                // + '/api/appliances'
+                const response = await fetch(process.env.REACT_APP_API_URL);
                 const data = await response.json();
                 setAppliances(data);
             } catch (error) {
