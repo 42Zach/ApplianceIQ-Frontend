@@ -8,7 +8,7 @@
 .diagnostic-image {
     width: 200px;
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Steps */
@@ -130,7 +130,7 @@ button:nth-child(4):hover {
     }
 
     button {
-        font-size: 25px;
+        font-size: 22px;
         padding: 15px 30px;
     }
 }
