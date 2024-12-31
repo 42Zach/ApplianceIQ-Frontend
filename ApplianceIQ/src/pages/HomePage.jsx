@@ -3,15 +3,20 @@ import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
 
+const API_BASE_URL = process.env.REACT_APP_BACKEND_API;
+
 const HomePage = () => {
     const [appliances, setAppliances] = useState([]);
 
     useEffect(() => {
         const fetchAppliances = async () => {
-            try {
-                // http://localhost:8080/api/appliances
+            // http://localhost:8080/api/appliances
                 // + '/api/appliances'
-                const response = await fetch(process.env.BACKEND_API);
+            try {
+                const response = await fetch(API_BASE_URL);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
                 const data = await response.json();
                 setAppliances(data);
             } catch (error) {
