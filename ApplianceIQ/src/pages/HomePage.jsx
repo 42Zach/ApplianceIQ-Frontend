@@ -3,9 +3,11 @@ import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
 
-const API_BASE_URL = REACT_APP_BACKEND_API;
+const API_BASE_URL = process.env.VITE_BACKEND_API;
+//import.meta.env.VITE_APP_BACKEND_API
 
 const HomePage = () => {
+    console.log("Backend API URL:", process.env.VITE_BACKEND_API);
     const [appliances, setAppliances] = useState([]);
 
     useEffect(() => {
@@ -26,7 +28,6 @@ const HomePage = () => {
 
         fetchAppliances();
     }, []);
-    console.log("Backend API URL:", REACT_APP_BACKEND_API);
 
     return (
         <>
