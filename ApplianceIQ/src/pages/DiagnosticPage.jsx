@@ -157,7 +157,7 @@ const DiagnosticPage = () => {
                 ) : (
                     <div className="diagnostic-complete">
                         <h3>Diagnostic Complete!</h3>
-                        <p>Congratulations! All steps have been completed.</p>
+                        <p>All steps have been completed.</p>
                     </div>
                 )}
 
