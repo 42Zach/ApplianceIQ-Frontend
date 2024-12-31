@@ -4,17 +4,14 @@ import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
 
 const API_BASE_URL = import.meta.env.VITE_BACKEND_API;
-//import.meta.env.VITE_APP_BACKEND_API
-//process.env.VITE_BACKEND_API
 
 const HomePage = () => {
-    console.log("Backend API URL:", import.meta.env.VITE_BACKEND_API);
     const [appliances, setAppliances] = useState([]);
 
     useEffect(() => {
         const fetchAppliances = async () => {
-            // http://localhost:8080/api/appliances
-                // + '/api/appliances'
+            // LOCAL DEPLOY:http://localhost:8080/api/appliances
+            // + '/api/appliances'
             try {
                 const response = await fetch(API_BASE_URL);
                 if (!response.ok) {
