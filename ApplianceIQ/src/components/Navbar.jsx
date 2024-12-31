@@ -10,8 +10,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-links">
                 <a href="/">Home</a>
-                <Link to="/contact">Contact Appliance Technician</Link>
-                {/* <a href="/contact">Contact Appliance Technician</a> */}
+                <a href="/contact">Contact Appliance Technician</a>
             </div>
         </nav>
     );
