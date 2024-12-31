@@ -14,7 +14,7 @@
 /* Steps */
 
 #steps-title {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 /* Step and progress bar */
@@ -116,17 +116,22 @@ button:nth-child(4):hover {
         font-size: 18px;
     }
 
+    .diagnostic-title {
+        font-size: 35px;
+    }
+
     .diagnostic-image {
         width: 300px;
         height: 300px;
     }
 
+    .diagnostic-step {
+        font-size: 20px;
+    }
+
     button {
         font-size: 25px;
         padding: 15px 30px;
-    }
-    .diagnostic-step {
-        font-size: 20px;
     }
 }
 

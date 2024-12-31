@@ -139,7 +139,7 @@ const DiagnosticPage = () => {
         <>
             <Navbar />
             <div className="diagnostic-container">
-                <h1>{appliance.name} Diagnostic</h1>
+                <h1 className='diagnostic-title'>{appliance.name} Diagnostic</h1>
                 <img src={appliance.image} alt={`${appliance.name}`} className="diagnostic-image" />
                 <h2 id="steps-title">{type ? `${type.charAt(0).toUpperCase() + type.slice(1)} Steps` : "General Steps"}</h2>
 
