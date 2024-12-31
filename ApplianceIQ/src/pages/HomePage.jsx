@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 
 const API_BASE_URL = process.env.REACT_APP_BACKEND_API;
 console.log("Backend API URL:", process.env.REACT_APP_BACKEND_API);
-console.log("Appliance image URL:", appliance.image);
 
 const HomePage = () => {
     const [appliances, setAppliances] = useState([]);
@@ -28,6 +27,7 @@ const HomePage = () => {
 
         fetchAppliances();
     }, []);
+    console.log("Appliance image URL:", appliance.image);
 
     return (
         <>
