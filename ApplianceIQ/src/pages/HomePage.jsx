@@ -3,12 +3,12 @@ import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
 
-const API_BASE_URL = import.meta.env.VITE_APP_BACKEND_API;
+const API_BASE_URL = import.meta.env.VITE_BACKEND_API;
 //import.meta.env.VITE_APP_BACKEND_API
 //process.env.VITE_BACKEND_API
 
 const HomePage = () => {
-    console.log("Backend API URL:", import.meta.env.VITE_APP_BACKEND_API);
+    console.log("Backend API URL:", import.meta.env.VITE_BACKEND_API);
     const [appliances, setAppliances] = useState([]);
 
     useEffect(() => {
