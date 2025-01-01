@@ -28,21 +28,40 @@
 
 /* Individual link styling */
 .navbar-links a {
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 17px;
     padding: 8px 15px;
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     font-weight: bold;
+    overflow: hidden;
 }
 
 /* Hover effect for links */
 .navbar-links a:hover {
     background-color: #ffcc00;
     color: #007bff;
-    border-color: #ffcc00;
+}
+
+/* Add a sliding underline animation */
+.navbar-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Animate underline on hover */
+.navbar-links a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 /* Adjust spacing so links are closer to the center */
