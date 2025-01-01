@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import ApplianceCard from '../components/ApplianceCard';
 import '../assets/styles/HomePage.css';
 import Navbar from '../components/Navbar';
@@ -46,7 +47,7 @@ const HomePage = () => {
             </div>
         </div>
         <div className="contact-page">
-            <a href="/contact">Contact Appliance Technician</a>
+            <Link to="/contact">Contact Appliance Technician</Link>
         </div>
         </>
     );
