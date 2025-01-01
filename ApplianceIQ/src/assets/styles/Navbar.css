@@ -13,20 +13,17 @@
     z-index: 1000;
 }
 
-/* Logo */
 .navbar-logo h1 {
     margin: 0;
     font-size: 33px;
 }
 
-/* Links container */
 .navbar-links {
     display: flex;
     justify-content: flex-end;
     gap: 40px;
 }
 
-/* Individual link styling */
 .navbar-links a {
     position: relative;
     color: white;
@@ -40,13 +37,11 @@
     overflow: hidden;
 }
 
-/* Hover effect for links */
 .navbar-links a:hover {
     background-color: #ffcc00;
     color: #007bff;
 }
 
-/* Add a sliding underline animation */
 .navbar-links a::after {
     content: "";
     position: absolute;
@@ -58,13 +53,11 @@
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
-/* Animate underline on hover */
 .navbar-links a:hover::after {
     width: 100%;
     left: 0;
 }
 
-/* Adjust spacing so links are closer to the center */
 .navbar-links {
     margin-right: 70px;
 }

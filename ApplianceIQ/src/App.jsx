@@ -17,7 +17,7 @@ function App() {
         <Route path="/type-selection/:applianceId" element={<TypeSelectionPage />} />
         <Route path="/diagnostic/:applianceId" element={<DiagnosticPage />} />
         <Route path="/diagnostic/:applianceId/:type" element={<DiagnosticPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   )
