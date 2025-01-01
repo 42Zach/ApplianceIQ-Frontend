@@ -21,7 +21,7 @@
 }
 
 .appliance-card img {
-    max-width: 60%;
+    max-width: 75%;
     height: auto;
     margin-bottom: 5px;
 }
@@ -88,6 +88,11 @@
 
     .homepage-subtitle {
         font-size: 24px;
+    }
+
+    .appliance-card img {
+        max-width: 75%;
+        height: auto;
     }
 
     .contact-page {
